@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – Duyet</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico"> 
+  <link rel="stylesheet" href="css/meins.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+  <script src="js/meinJS.js"></script>
+
+</head>
+<body class="contact-page">
+  <header>
+    <h1>Kontakt</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Start</a></li>
+      <li><a href="about.html">Über mich</a></li>
+      <li><a href="gallery.html">Galerie</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="contact-form">
+      <h2>Schreib uns eine Nachricht</h2>
+      <form action="mailto:info@cococare.de" method="post" enctype="text/plain">
+
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">E-Mail*</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Nachricht*</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+        
+        <input type="hidden" name="_redirect" value="thankyou.html">
+        <button type="submit">Senden</button>
+      </form>      
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-contact">
+        <h3>Kontakt</h3>
+        <p>Adresse: Kokosnussweide 1, 12345 Kokoshausen</p>
+        <p>Telefon: +49 123 4567890</p>
+        <p>Email: info@cococare.de</p>
+      </div>
+
+      <div class="footer-social">
+        <h3>Folge uns</h3>
+        <div class="social-links">
+          <a href="https://www.instagram.com/pickajuz?igsh=MXg0YmNmZDQ3cmJyNw=="><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      
+
+      <div class="footer-newsletter">
+        <h3>Newsletter</h3>
+        <form action="mailto:info@cococare.de" method="post" enctype="text/plain">
+          <input type="email" placeholder="Deine E-Mail" required />
+          <button type="submit">Anmelden</button>
+        </form>
+      </div>
+    </div>
+    <p class="footer-copy">&copy; 2025 Duyet</p>
+  </footer>
+</body>
+</html>
